@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aruco</name>
+  <version>2.0.16</version>
+  <description>ArUco</description>
+
+  <maintainer email="efernandez@clearpath.ai">Enrique Fernandez</maintainer>
+  <maintainer email="rmsalinas@uco.es">Rafael Munoz-Salinas</maintainer>
+  <author email="rmsalinas@uco.es">Rafael Munoz-Salinas</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <depend>eigen</depend>
+  <depend>glut</depend>
+  <depend>libopencv-dev</depend>
+  <depend>opengl</depend>
+
+  <export>
+    <!-- Specify that this is not really a Catkin package-->
+    <build_type>cmake</build_type>
+  </export>
+</package>
