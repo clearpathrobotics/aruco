@@ -14,7 +14,7 @@
 
   <depend>eigen</depend>
   <depend>glut</depend>
-  <depend>libopencv-dev</depend>
+  <depend>opencv3</depend>
   <depend>opengl</depend>
 
   <export>
