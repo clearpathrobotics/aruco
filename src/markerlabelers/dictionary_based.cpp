@@ -75,8 +75,8 @@ bool DictionaryBased::detect(const cv::Mat &in, int & marker_id,int &nRotations)
             }
         }
     }
-    else  return false;
 
+    return false;
  }
 
  bool DictionaryBased::getInnerCode(const cv::Mat &thres_img,int total_nbits,std::vector<uint64_t> &ids){
