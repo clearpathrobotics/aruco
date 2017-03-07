@@ -245,6 +245,8 @@ cv::Mat rigidBodyTransformation_Horn1987 (const std::vector<cv::Point3f> &org, c
         return res;
 
     }
+
+    throw cv::Exception(9001, "Multiplying matrix of non-floating type", "mult", __FILE__, __LINE__);
 }
 
 std::vector<cv::Vec4f> getPcdPoints(const vector<cv::Point3f> &mpoints,cv::Scalar color,int npoints=100){

@@ -247,7 +247,9 @@ std::string Dictionary::getTypeString(DICT_TYPES t)  throw(cv::Exception){
     case TAG25h9:return "TAG25h9";break;
     case TAG36h11:return "TAG36h11";break;
     case TAG36h10:return "TAG36h10";break;
-   };
+    };
+
+    throw cv::Exception(9001, "Invalid Dictionary type to convert to string", "Dictionary::getTypeString", __FILE__, __LINE__);
 }
 
 Dictionary::DICT_TYPES Dictionary::getTypeFromString(std::string str)   throw(cv::Exception){
